@@ -1,0 +1,248 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #d1d1d1;
+    --botao-azul: #650f0a;
+    --cor-de-fundo: #000201;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #58312f;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Seção Principal */
+.principal {
+    text-align: center;
+    padding: 20px;
+    background-image: url("img/Background6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container__caixa {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.container__titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+    text-align: center;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 0.8rem;
+    color: var(--cinza-secundario);
+    margin-top: 10px;
+}
+
+/* Seções Secundárias */
+.container {
+    padding: 20px;
+}
+
+.secundario {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.secundario__imagem {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.container__descricao {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.descricao__titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.descricao__texto {
+    font-size: 1rem;
+    color: var(--cinza-secundario);
+}
+
+/* Dispositivos */
+.dispositivos {
+    text-align: center;
+    padding: 20px;
+}
+
+.dispositivos__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dispositivos__lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dispositivos__lista li {
+    text-align: center;
+    width: 120px;
+}
+
+.dispositivos__lista img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.lista__item {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: var(--branco-principal);
+}
+
+.rodape__logo {
+    width: 150px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.lista__link a {
+    color: var(--branco-principal);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.rodape__texto {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: var(--cinza-secundario);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container__titulo {
+        font-size: 1.5rem;
+    }
+
+    .descricao__titulo {
+        font-size: 1.4rem;
+    }
+
+    .descricao__texto {
+        font-size: 0.9rem;
+    }
+
+    .container__botao {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .dispositivos__lista li {
+        width: 100px;
+    }
+
+    .lista__item {
+        font-size: 0.9rem;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container__titulo {
+        font-size: 1.2rem;
+    }
+
+    .descricao__titulo {
+        font-size: 1.2rem;
+    }
+
+    .descricao__texto {
+        font-size: 0.8rem;
+    }
+
+    .container__botao {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .rodape__texto {
+        font-size: 0.7rem;
+    }
+}
